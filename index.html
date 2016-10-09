@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<head>
+<style>
+body{
+    text-align: center; 
+     background: url("back.jpg");;
+     color: #CC6666;
+     font-family: Helvetica;
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+    
+h1 { 
+    text-align: center; 
+}
+
+p { 
+    text-align: center; 
+    font-size: 24px;
+}
+input {
+  border: 0;
+  padding: 12px;
+  font-size: 18px;
+   
+}
+input[type="submit"] {
+  background: limegreen;
+  color: black;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #606060;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+#panel1, #flip1 {
+    padding: 5px;
+    text-align: center;
+    background-color: #606060;
+    border: solid 1px #c3c3c3;
+}
+
+#panel1 {
+    padding: 50px;
+    display: none;
+}
+
+#panel2, #flip2 {
+    padding: 5px;
+    text-align: center;
+    background-color:#606060;
+    border: solid 1px #c3c3c3;
+}
+
+#panel2 {
+    padding: 50px;
+    display: none;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("fast");
+    });
+});
+</script>
+
+<script> 
+$(document).ready(function(){
+    $("#flip1").click(function(){
+        $("#panel1").slideDown("slow");
+    });
+});
+</script>
+
+<script> 
+$(document).ready(function(){
+    $("#flip2").click(function(){
+        $("#panel2").slideDown("slow");
+    });
+});
+</script>
+
+</head>
+<body>
+
+
+<img src="pic.jpg" height="250" width="250">
+<h1> Vaishali Pandurangan</h2>
+
+<p>Hi! My name is Vaishali .I am a grad student in <a href="http://web.iit.edu/"> Illinois Institute of Technology</a> </p>
+<p>These are the stuffs regarding me</p>
+<p>click the below points to expand it</p>
+    
+
+
+<div id="flip">My hobbies</div>
+<div id="panel">
+<ul> 
+  <li>Reading novels</li>
+  <li>Travelling</li>
+  <li>Music</li>
+</ul>
+</div>
+
+<div id="flip1">Coding languages I know </div>
+<div id="panel1">
+<ul> 
+  <li>Java</li>
+  <li>HTM/CSS/JavaScript</li>
+  <li>PHP</li>
+</ul>
+</div>
+
+<div id="flip2">My skills </div>
+<div id="panel2">
+<ul> 
+  <li>Cooking</li>
+  <li>Writing</li>
+  <li>Sleeping!! LOL</li>
+</ul>
+
+</div>
+
+
+</body>
